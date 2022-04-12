@@ -8,7 +8,6 @@
 	],
 	"license": "",
 	"main": "lib/index.js",
-	"private": true,
 	"repository": "https://github.com/SovereignWallet-Network/metamui-offline-txn.git",
 	"bugs": "https://github.com/SovereignWallet-Network/metamui-offline-txn/issues",
 	"homepage": "https://github.com/SovereignWallet-Network/metamui-offline-txn.git#readme",
