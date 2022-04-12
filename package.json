@@ -1,0 +1,28 @@
+{
+	"name": "@metamui/offline-txn",
+	"version": "0.0.1",
+	"author": "SWN Global",
+	"description": "MetaMUI offline transaction generation library.",
+	"files": [
+		"lib"
+	],
+	"license": "",
+	"main": "lib/index.js",
+	"private": true,
+	"repository": "https://github.com/SovereignWallet-Network/metamui-offline-txn.git",
+	"bugs": "https://github.com/SovereignWallet-Network/metamui-offline-txn/issues",
+	"homepage": "https://github.com/SovereignWallet-Network/metamui-offline-txn.git#readme",
+	"engine": {
+		"node": ">=14"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@substrate/txwrapper-core": "^2.0.0"
+	},
+	"devDependencies": {
+		"ts-node": "9.1.1",
+		"typescript": "^4.6.3"
+	}
+}
