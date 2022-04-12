@@ -42,7 +42,7 @@ Actual Tx Hash: 0x33130c2d3d304cf0a39ef9d33abebb2a6987f257d45100ca2c11373b604b34
 
 ## Offline vs. Online
 
-In the examples, the `rpcToLocalNode` function is the only function that needs to be called with internet access. Everything else can be performed offline. In particular, this example shows how to perform the following operations offline:
+In the examples, the WsProvider object (api) is the only interface that needs to be called with internet access. Everything else can be performed offline. In particular, this example shows how to perform the following operations offline:
 
 - Generate a tx,
 - Create its signing payload,
