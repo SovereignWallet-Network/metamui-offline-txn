@@ -43,7 +43,7 @@ export function transferWithMemo(
 		{
 			method: {
 				args,
-				name: 'transfer_with_memo',
+				name: 'transferWithMemo',
 				pallet: 'balances',
 			},
 			...info,

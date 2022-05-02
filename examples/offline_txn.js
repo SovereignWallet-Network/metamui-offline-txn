@@ -62,11 +62,13 @@ async function main() {
 		asCallsOnlyArg: true,
 	});
 
-	const unsigned = methods.balances.transfer(
+	// Register our custom chain types
+	registry.register(METAMUI_TYPES);
+	const unsigned = methods.balances.transferWithMemo(
 		{
 			value: '5000000',
-			dest: '14E5nqKAp3oAJcmzgZhUD2RcptBeUBScxKHgJKU4HPNcKVf3', // Bob
-			// dest: '0x6469643a737369643a73776e3200000000000000000000000000000000000000', //did:ssid:swn2
+			dest: '14E5nqKAp3oAJcmzgZhUD2RcptBeUBScxKHgJKU4HPNcKVf3', // did:ssid:swn2
+			memo: registry.createType('Memo', 'TestMemo'),
 		},
 		{
 			address: deriveAddress(alice.publicKey, 42),
@@ -75,7 +77,7 @@ async function main() {
 			eraPeriod: 64,
 			genesisHash,
 			metadataRpc,
-			nonce: senderNonce, // Assuming this is Alice's first tx on the chain
+			nonce: senderNonce, 
 			specVersion,
 			tip: 0,
 			transactionVersion,
