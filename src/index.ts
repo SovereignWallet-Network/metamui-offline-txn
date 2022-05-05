@@ -42,9 +42,9 @@ export function getRegistry({
 	specVersion,
 	metadataRpc,
 	properties,
-	asCallsOnlyArg,
-	signedExtensions,
-	userExtensions,
+	// asCallsOnlyArg,
+	// signedExtensions,
+	// userExtensions,
 }: GetRegistryOpts): TypeRegistry {
 	const registry = new TypeRegistry();
 	registry.register(METAMUI_TYPES);
@@ -52,8 +52,8 @@ export function getRegistry({
 		chainProperties: properties,
 		specTypes: getSpecTypes(registry, chainName, specName, specVersion),
 		metadataRpc,
-		asCallsOnlyArg,
-		signedExtensions,
-		userExtensions,
+		// asCallsOnlyArg,
+		// signedExtensions,
+		// userExtensions,
 	});
 }
