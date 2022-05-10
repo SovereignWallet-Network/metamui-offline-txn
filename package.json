@@ -1,6 +1,6 @@
 {
   "name": "@metamui/offline-txn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "SWN Global",
   "description": "MetaMUI offline transaction generation library.",
   "files": [
