@@ -4,6 +4,7 @@ import { KNOWN_CHAIN_PROPERTIES } from './utils/util';
 export * from './utils/util';
 export declare const methods: {
     balances: typeof metamuiMethods.balances;
+    tokens: typeof metamuiMethods.tokens;
 };
 export * from '@substrate/txwrapper-core';
 /**

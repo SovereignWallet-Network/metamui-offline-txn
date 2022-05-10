@@ -16,6 +16,7 @@ export * from './utils/util';
 // that do not exist in Substrate.
 export const methods = {
 	balances: metamuiMethods.balances,
+	tokens: metamuiMethods.tokens,
 };
 
 // Re-export all of txwrapper-core so users have access to utilities, construct functions,
